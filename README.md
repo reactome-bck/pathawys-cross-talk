@@ -120,12 +120,17 @@ followed with all the found interactions between it and participating molecules 
 one of them as example:
 
 ```
-(0.935) UniProt:O43521 BCL2L11 <- UniProt:Q07817-1 BCL2L1 -> UniProt:Q07812 BAX (0.969)
+UniProt:O43521 BCL2L11 <-[0.935]- UniProt:Q07817-1 BCL2L1 -[0.969]-> UniProt:Q07812 BAX
+BCL2L11 [cytosol]                                                    BAX [cytosol] 
 ```
 The above says that "UniProt:O43521 BCL2L11" is present in *pathway A* and it interacts with the **interactor bridge** 
 with a score of 0.935. At the same time, the **interactor bridge** interacts with "UniProt:Q07812 BAX" (present in 
 *pathway B*) with a score of 0.969. The combined score for this interaction is shown in the next column. It is calculated
 by multiplying both *score A* and *score B*.
+
+[BCL2L11 [cytosol]](https://reactome.org/PathwayBrowser/#/R-HSA-193704&SEL=R-HSA-2976673) and [BAX [cytosol]](https://reactome.org/PathwayBrowser/#/R-HSA-5633008&SEL=R-HSA-139916)
+are clickable so it is easier to see the target existing molecules directly in the pathways that are target for cross-talk
+in this entry.
 
 ## Usage:
 This project can be used as a standalone compiled tool:
